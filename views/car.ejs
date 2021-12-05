@@ -1,0 +1,33 @@
+<html>
+<body>
+    <form action="/getamount">
+    <table>
+    <caption><h3>Car Rent Service</h3></caption>
+    <tr>
+    <td><i>Car:</i></td>
+    <td>
+    <select name="pname">
+        <option>-Select-</option>
+        <option>Sedan</option>
+    <option>SUV</option>
+    <option>Mini</option>
+    </select>
+    </td>
+
+    </tr>
+    <tr>
+    <td><i>Distance:</i></td>
+    <td><input type="text" name="dis"></td>
+    <td><input type="submit" ></td>
+
+    </tr>
+    </table><br><br>
+    <% if(view){ %>
+    <b>Car type:</b><%=carname %><br><br>
+    <b>Distance:</b><%=distance %><br><br>
+    <b>Rate/km:</b><%=rate %><br><br>
+    <b>Net Amount:</b><%=na %><br><br>
+    <%} %>
+    </form>
+</body>
+</html>
